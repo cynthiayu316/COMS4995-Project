@@ -2,6 +2,7 @@ import os
 from colorama import Fore, Style
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
+from torchvision.datasets.utils import download_and_extract_archive
 
 def datainfo(logger, args):
     if args.dataset == 'CIFAR10':
@@ -74,10 +75,16 @@ def dataload(args, augmentations, normalize, data_info):
             *normalize]))
         
     elif args.dataset == 'T-IMNET':
+        datasetURL = "http://cs231n.stanford.edu/tiny-imagenet-200.zip"
+        if not os.path.exists(os.path.join(args.data_path, 'tiny_imagenet')):
+            print(f"Downloading TinyImageNet data to {args.data_path}")
+            download_and_extract_archive(datasetURL, args.data_path)
+            print("...done")
+        
         train_dataset = datasets.ImageFolder(
-            root=os.path.join(args.data_path, 'tiny_imagenet', 'train'), transform=augmentations)
+            root=os.path.join(args.data_path, 'tiny-imagenet-200', 'train'), transform=augmentations)
         val_dataset = datasets.ImageFolder(
-            root=os.path.join(args.data_path, 'tiny_imagenet', 'val'), 
+            root=os.path.join(args.data_path, 'tiny-imagenet-200', 'val'), 
             transform=transforms.Compose([
             transforms.Resize(data_info['img_size']), transforms.ToTensor(), *normalize]))
     
