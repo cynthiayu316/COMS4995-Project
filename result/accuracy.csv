@@ -1,0 +1,26 @@
+,model,gpu,dataset,top-1 accuracy
+0,vit-Base,P100,T-IMNET,1.63
+1,vit-Base,P100,CIFAR10,93.58
+2,resnet-Base,P100,CIFAR100,67.96
+3,resnet-Base,K80,CIFAR100,68.2
+4,swin-Base,V100,CIFAR10,94.99
+5,swin-Base,V100,T-IMNET,1.63
+6,resnet-Base,K80,CIFAR10,92.19
+7,vit-Base,K80,CIFAR100,72.61
+8,swin-Base,K80,CIFAR10,0.25
+9,resnet-Base,P100,T-IMNET,0.25
+10,resnet-Base,P100,CIFAR10,92.41
+11,vit-Base,K80,T-IMNET,0.25
+12,swin-Base,V100,CIFAR100,77.63
+13,vit-Base,V100,CIFAR100,72.6
+14,resnet-Base,V100,T-IMNET,5.35
+15,resnet-Base,V100,CIFAR10,87.72
+16,swin-Base,P100,CIFAR100,77.79
+17,swin-Base,K80,CIFAR100,77.94
+18,vit-Base,P100,CIFAR100,72.37
+19,vit-Base,V100,T-IMNET,0.25
+20,vit-Base,V100,CIFAR10,93.53
+21,vit-Base,K80,CIFAR10,93.42
+22,resnet-Base,V100,CIFAR100,66.54
+23,swin-Base,P100,CIFAR10,95.07
+24,swin-Base,P100,T-IMNET,1.63
