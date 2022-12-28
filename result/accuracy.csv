@@ -22,10 +22,10 @@ Deformable VIT,K80,CIFAR-100,71.04
 Deformable VIT,K80,TinyImageNet,63.2
 Deformable VIT,V100,CIFAR-10,96.35
 Deformable VIT,V100,CIFAR-100,72.52
-Deformable VIT,V100,TinyImageNet,63.2
+Deformable VIT,V100,TinyImageNet,65.2
 Deformable VIT,P100,CIFAR-10,94.97
 Deformable VIT,P100,CIFAR-100,73.11
-Deformable VIT,P100,TinyImageNet,63.2
+Deformable VIT,P100,TinyImageNet,63.9
 Swin-Transformer,K80,CIFAR-10,95.18
 Swin-Transformer,K80,CIFAR-100,77.94
 Swin-Transformer,K80,TinyImageNet,60.93

@@ -1,6 +1,6 @@
-# Project for COMS 6998 Practical Deep Learning Systems Performance 
+# Project for COMS 4995 Applied Deep Learning 
 
-> Author：Lukas Wang (bw2712), Zefang Wang (zw2778)
+> Author：Lukas Wang (bw2712), Binghong Yu (by2325)
 
 <!-- logo -->
 
@@ -283,7 +283,7 @@ python main.py --model deformvit
 <table class="center">
     <thead>
         <tr>
-            <th style="text-align: center">Zefang Wang</th>
+            <th style="text-align: center">Binghong Yu</th>
             <th style="text-align: center">Lukas Wang</th>
         </tr>
     </thead>
